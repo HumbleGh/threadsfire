@@ -10,6 +10,7 @@ class SplashScreen extends StatefulWidget {
 
 class _SplashScreenState extends State<SplashScreen> {
   final emailController = TextEditingController();
+  final passwordlController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -18,14 +19,17 @@ class _SplashScreenState extends State<SplashScreen> {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Center(
-            child: Image.asset(
-              "assets/images/logo.png",
-              width: 60,
+          Padding(
+            padding: const EdgeInsets.only(bottom: 20),
+            child: Center(
+              child: Image.asset(
+                "assets/images/logo.png",
+                width: 60,
+              ),
             ),
           ),
           Padding(
-            padding: const EdgeInsets.all(20),
+            padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
             child: TextFormField(
               controller: emailController,
               cursorColor: Colors.black,
@@ -36,14 +40,35 @@ class _SplashScreenState extends State<SplashScreen> {
                   borderSide: BorderSide(color: Colors.grey.shade400),
                 ),
                 focusedBorder: const OutlineInputBorder(
-                  borderSide: BorderSide(color: Colors.black),
-                ),
+                    borderSide: BorderSide(color: Colors.black),
+                    borderRadius: BorderRadius.all(Radius.circular(8.0))),
                 hintText: "Enter your email",
                 hintStyle: GoogleFonts.manrope(
                     fontSize: 14, color: Colors.grey.shade400),
               ),
             ),
-          )
+          ),
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+            child: TextFormField(
+              controller: passwordlController,
+              obscureText: true,
+              cursorColor: Colors.black,
+              decoration: InputDecoration(
+                contentPadding: const EdgeInsets.all(10.0),
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(8),
+                  borderSide: BorderSide(color: Colors.grey.shade400),
+                ),
+                focusedBorder: const OutlineInputBorder(
+                    borderSide: BorderSide(color: Colors.black),
+                    borderRadius: BorderRadius.all(Radius.circular(8.0))),
+                hintText: "Enter your password",
+                hintStyle: GoogleFonts.manrope(
+                    fontSize: 14, color: Colors.grey.shade400),
+              ),
+            ),
+          ),
         ],
       ),
     ));
