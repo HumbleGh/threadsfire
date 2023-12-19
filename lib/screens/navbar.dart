@@ -54,15 +54,15 @@ class _BottomNavBarState extends State<BottomNavBar> {
           BottomNavigationBarItem(
             icon: SvgPicture.asset(
               'assets/icons/HomeOutline.svg',
-              height: 20,
-              width: 20,
+              height: 20.0,
+              width: 20.0,
               color: Colors.grey,
             ), // Provide icon
             activeIcon: SvgPicture.asset(
               'assets/icons/HomeBold.svg',
               color: Colors.black,
-              height: 20,
-              width: 20,
+              height: 20.0,
+              width: 20.0,
             ), // Provide activeIcon
             label: 'Home',
           ),
