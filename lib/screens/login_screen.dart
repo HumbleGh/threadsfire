@@ -109,7 +109,7 @@ class _LoginScreenState extends State<LoginScreen> {
                               builder: (context) => const SignupScreen()));
                     },
                     child: Text(
-                      "Create Account",
+                      "Create Accoun",
                       style: GoogleFonts.manrope(
                           fontWeight: FontWeight.bold, color: Colors.black),
                     ))
