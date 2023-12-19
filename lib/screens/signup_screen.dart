@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:threadsfire/screens/login_screen.dart';
+import 'package:threadsfire/screens/navbar.dart';
 
 class SignupScreen extends StatefulWidget {
   const SignupScreen({super.key});
@@ -35,6 +37,42 @@ class _SignupScreenState extends State<SignupScreen> {
             ),
             const Gap(20),
             TextFormField(
+              controller: fullNameController,
+              cursorColor: Colors.black,
+              decoration: InputDecoration(
+                contentPadding: const EdgeInsets.all(10.0),
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(8),
+                  borderSide: const BorderSide(color: Colors.black),
+                ),
+                focusedBorder: const OutlineInputBorder(
+                    borderSide: BorderSide(color: Colors.black),
+                    borderRadius: BorderRadius.all(Radius.circular(8.0))),
+                hintText: "Enter your full name",
+                hintStyle: GoogleFonts.manrope(
+                    fontSize: 14, color: Colors.grey.shade600),
+              ),
+            ),
+            const Gap(20),
+            TextFormField(
+              controller: userNameController,
+              cursorColor: Colors.black,
+              decoration: InputDecoration(
+                contentPadding: const EdgeInsets.all(10.0),
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(8),
+                  borderSide: const BorderSide(color: Colors.black),
+                ),
+                focusedBorder: const OutlineInputBorder(
+                    borderSide: BorderSide(color: Colors.black),
+                    borderRadius: BorderRadius.all(Radius.circular(8.0))),
+                hintText: "Enter a username",
+                hintStyle: GoogleFonts.manrope(
+                    fontSize: 14, color: Colors.grey.shade600),
+              ),
+            ),
+            const Gap(20),
+            TextFormField(
               controller: emailController,
               cursorColor: Colors.black,
               decoration: InputDecoration(
@@ -48,7 +86,7 @@ class _SignupScreenState extends State<SignupScreen> {
                     borderRadius: BorderRadius.all(Radius.circular(8.0))),
                 hintText: "Enter your email",
                 hintStyle: GoogleFonts.manrope(
-                    fontSize: 14, color: Colors.grey.shade400),
+                    fontSize: 14, color: Colors.grey.shade600),
               ),
             ),
             const Gap(20),
@@ -65,33 +103,44 @@ class _SignupScreenState extends State<SignupScreen> {
                 focusedBorder: const OutlineInputBorder(
                     borderSide: BorderSide(color: Colors.black),
                     borderRadius: BorderRadius.all(Radius.circular(8.0))),
-                hintText: "Enter your password",
+                hintText: "Create your password",
                 hintStyle: GoogleFonts.manrope(
-                    fontSize: 14, color: Colors.grey.shade400),
+                    fontSize: 14, color: Colors.grey.shade600),
               ),
             ),
             const Gap(10),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.end,
-              children: [
-                GestureDetector(
-                    onTap: () {}, child: const Text("Forgot Passsword"))
-              ],
-            ),
+            // Row(
+            //   mainAxisAlignment: MainAxisAlignment.end,
+            //   children: [
+            //     GestureDetector(
+            //         onTap: () {}, child: const Text("Forgot Passsword"))
+            //   ],
+            // ),
             const Gap(30),
-            Container(
-              height: 50,
-              width: double.infinity,
-              padding: const EdgeInsets.all(12),
-              decoration: BoxDecoration(
-                  color: Colors.black, borderRadius: BorderRadius.circular(8)),
-              child: Text(
-                "Login",
-                textAlign: TextAlign.center,
-                style: GoogleFonts.manrope(
-                    color: Colors.white,
-                    fontSize: 14,
-                    fontWeight: FontWeight.bold),
+            GestureDetector(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const BottomNavBar(),
+                  ),
+                );
+              },
+              child: Container(
+                height: 50,
+                width: double.infinity,
+                padding: const EdgeInsets.all(12),
+                decoration: BoxDecoration(
+                    color: Colors.black,
+                    borderRadius: BorderRadius.circular(8)),
+                child: Text(
+                  "Create account",
+                  textAlign: TextAlign.center,
+                  style: GoogleFonts.manrope(
+                      color: Colors.white,
+                      fontSize: 14,
+                      fontWeight: FontWeight.bold),
+                ),
               ),
             ),
             const Spacer(),
@@ -99,13 +148,19 @@ class _SignupScreenState extends State<SignupScreen> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text(
-                  "Don't have an account?",
+                  "Already have an account?",
                   style: GoogleFonts.manrope(fontSize: 14, color: Colors.black),
                 ),
                 TextButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const LoginScreen()),
+                      );
+                    },
                     child: Text(
-                      "Create Account",
+                      "Login",
                       style: GoogleFonts.manrope(
                           fontWeight: FontWeight.bold, color: Colors.black),
                     ))

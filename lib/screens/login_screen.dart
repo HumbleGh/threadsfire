@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:threadsfire/screens/signup_screen.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
@@ -101,7 +102,12 @@ class _LoginScreenState extends State<LoginScreen> {
                   style: GoogleFonts.manrope(fontSize: 14, color: Colors.black),
                 ),
                 TextButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const SignupScreen()));
+                    },
                     child: Text(
                       "Create Account",
                       style: GoogleFonts.manrope(
