@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "846448801431",
+    "project_id": "threadsfire",
+    "storage_bucket": "threadsfire.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:846448801431:android:3139541c86d4411f941bd2",
+        "android_client_info": {
+          "package_name": "com.example.threadsfire"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZIxn8YJnqlSEWHLUS_UIRBPDORpofhDU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
