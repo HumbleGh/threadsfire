@@ -1,6 +1,8 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:threadsfire/screens/home/home.dart';
 import 'package:threadsfire/screens/signup_screen.dart';
 
 class LoginScreen extends StatefulWidget {
@@ -13,6 +15,23 @@ class LoginScreen extends StatefulWidget {
 class _LoginScreenState extends State<LoginScreen> {
   final emailController = TextEditingController();
   final passwordController = TextEditingController();
+
+  // Login Function
+  Future<void> login() async {
+    try {
+      await FirebaseAuth.instance.signInWithEmailAndPassword(
+        email: emailController.text.trim(),
+        password: passwordController.text.trim(),
+      );
+    } catch (e) {
+      print(e);
+      return;
+    }
+    if (mounted) {
+      Navigator.pushReplacement(
+          context, MaterialPageRoute(builder: (context) => const HomeScreen()));
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -78,19 +97,23 @@ class _LoginScreenState extends State<LoginScreen> {
               ],
             ),
             const Gap(30),
-            Container(
-              height: 50,
-              width: double.infinity,
-              padding: const EdgeInsets.all(12),
-              decoration: BoxDecoration(
-                  color: Colors.black, borderRadius: BorderRadius.circular(8)),
-              child: Text(
-                "Login",
-                textAlign: TextAlign.center,
-                style: GoogleFonts.manrope(
-                    color: Colors.white,
-                    fontSize: 14,
-                    fontWeight: FontWeight.bold),
+            GestureDetector(
+              onTap: login,
+              child: Container(
+                height: 50,
+                width: double.infinity,
+                padding: const EdgeInsets.all(12),
+                decoration: BoxDecoration(
+                    color: Colors.black,
+                    borderRadius: BorderRadius.circular(8)),
+                child: Text(
+                  "Login",
+                  textAlign: TextAlign.center,
+                  style: GoogleFonts.manrope(
+                      color: Colors.white,
+                      fontSize: 14,
+                      fontWeight: FontWeight.bold),
+                ),
               ),
             ),
             const Spacer(),
