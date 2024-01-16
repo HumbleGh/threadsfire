@@ -1,6 +1,9 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:threadsfire/screens/home/home.dart';
 import 'package:threadsfire/screens/login_screen.dart';
 import 'package:threadsfire/screens/navbar.dart';
 
@@ -16,6 +19,27 @@ class _SignupScreenState extends State<SignupScreen> {
   final passwordController = TextEditingController();
   final fullNameController = TextEditingController();
   final userNameController = TextEditingController();
+
+  Future<void> signup() async {
+    try {
+      UserCredential userCredential =
+          await FirebaseAuth.instance.createUserWithEmailAndPassword(
+        email: emailController.text.trim(),
+        password: passwordController.text.trim(),
+      );
+
+      String userId = userCredential.user!.uid;
+
+      await FirebaseFirestore.instance.collection("users").doc(userId).set({
+        'name': fullNameController.text,
+        'username': userNameController.text
+      });
+    } catch (e) {}
+    if (mounted) {
+      Navigator.pushReplacement(
+          context, MaterialPageRoute(builder: (context) => const HomeScreen()));
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
