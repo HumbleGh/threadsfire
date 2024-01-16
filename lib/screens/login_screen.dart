@@ -2,7 +2,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:threadsfire/screens/home/home.dart';
+import 'package:threadsfire/screens/navbar.dart';
 import 'package:threadsfire/screens/signup_screen.dart';
 
 class LoginScreen extends StatefulWidget {
@@ -28,8 +28,8 @@ class _LoginScreenState extends State<LoginScreen> {
       return;
     }
     if (mounted) {
-      Navigator.pushReplacement(
-          context, MaterialPageRoute(builder: (context) => const HomeScreen()));
+      Navigator.pushReplacement(context,
+          MaterialPageRoute(builder: (context) => const BottomNavBar()));
     }
   }
 

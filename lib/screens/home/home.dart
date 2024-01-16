@@ -23,6 +23,13 @@ class _HomeScreenState extends State<HomeScreen> {
             padding: EdgeInsets.all(20.0),
             child: Column(
               children: [
+                Center(
+                  child: Image(
+                    image: AssetImage("assets/images/logo.png"),
+                    height: 40,
+                  ),
+                ),
+                Gap(20),
                 ThreadsMessage(),
                 ThreadsMessage(),
                 ThreadsMessage(),

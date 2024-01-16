@@ -4,7 +4,6 @@ import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:threadsfire/screens/login_screen.dart';
-import 'package:threadsfire/screens/navbar.dart';
 
 class SignupScreen extends StatefulWidget {
   const SignupScreen({super.key});
@@ -144,14 +143,7 @@ class _SignupScreenState extends State<SignupScreen> {
             // ),
             const Gap(30),
             GestureDetector(
-              onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => const BottomNavBar(),
-                  ),
-                );
-              },
+              onTap: signup,
               child: Container(
                 height: 50,
                 width: double.infinity,
