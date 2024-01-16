@@ -3,7 +3,6 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:threadsfire/screens/home/home.dart';
 import 'package:threadsfire/screens/login_screen.dart';
 import 'package:threadsfire/screens/navbar.dart';
 
@@ -34,10 +33,13 @@ class _SignupScreenState extends State<SignupScreen> {
         'name': fullNameController.text,
         'username': userNameController.text
       });
-    } catch (e) {}
+    } catch (e) {
+      print("Error: ${e.toString}");
+      return;
+    }
     if (mounted) {
-      Navigator.pushReplacement(
-          context, MaterialPageRoute(builder: (context) => const HomeScreen()));
+      Navigator.push(context,
+          MaterialPageRoute(builder: (context) => const LoginScreen()));
     }
   }
 
