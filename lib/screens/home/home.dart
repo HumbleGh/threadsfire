@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:gap/gap.dart'; // Make sure you have the import for Gap
 import 'package:google_fonts/google_fonts.dart';
+import 'package:threadsfire/model/thread_message.dart';
 import 'package:threadsfire/screens/navbar.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -21,7 +22,7 @@ class _HomeScreenState extends State<HomeScreen> {
       body: SafeArea(
         child: SingleChildScrollView(
           child: Padding(
-            padding: EdgeInsets.all(20.0),
+            padding: const EdgeInsets.all(20.0),
             child: Column(
               children: [
                 GestureDetector(
@@ -31,7 +32,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         MaterialPageRoute(
                             builder: (context) => const BottomNavBar()));
                   },
-                  child: Center(
+                  child: const Center(
                     child: Image(
                       image: AssetImage("assets/images/logo.png"),
                       height: 40,
@@ -39,14 +40,9 @@ class _HomeScreenState extends State<HomeScreen> {
                   ),
                 ),
                 Gap(20),
-                ThreadsMessage(),
-                ThreadsMessage(),
-                ThreadsMessage(),
-                ThreadsMessage(),
-                ThreadsMessage(),
-                ThreadsMessage(),
-                ThreadsMessage(),
-                ThreadsMessage(),
+                ListView.builder(
+                    itemCount: threadMessages.length,
+                    itemBuilder: (context, index) {})
               ],
             ),
           ),
@@ -56,8 +52,8 @@ class _HomeScreenState extends State<HomeScreen> {
   }
 }
 
-class ThreadsMessage extends StatelessWidget {
-  const ThreadsMessage({
+class ThreadMessageWidget extends StatelessWidget {
+  const ThreadMessageWidget({
     super.key,
   });
 
