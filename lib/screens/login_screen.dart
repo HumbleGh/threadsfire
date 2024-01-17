@@ -28,12 +28,8 @@ class _LoginScreenState extends State<LoginScreen> {
       return;
     }
     if (mounted) {
-      Navigator.pushReplacement(
-        context,
-        MaterialPageRoute(
-          builder: (context) => const BottomNavBar(),
-        ),
-      );
+      Navigator.pushReplacement(context,
+          MaterialPageRoute(builder: (context) => const BottomNavBar()));
     }
   }
 

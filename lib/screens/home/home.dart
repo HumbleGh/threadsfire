@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:gap/gap.dart'; // Make sure you have the import for Gap
 import 'package:google_fonts/google_fonts.dart';
+import 'package:threadsfire/screens/navbar.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key})
@@ -16,17 +17,25 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
       body: SafeArea(
         child: SingleChildScrollView(
           child: Padding(
             padding: EdgeInsets.all(20.0),
             child: Column(
               children: [
-                Center(
-                  child: Image(
-                    image: AssetImage("assets/images/logo.png"),
-                    height: 40,
+                GestureDetector(
+                  onTap: () {
+                    Navigator.pushReplacement(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const BottomNavBar()));
+                  },
+                  child: Center(
+                    child: Image(
+                      image: AssetImage("assets/images/logo.png"),
+                      height: 40,
+                    ),
                   ),
                 ),
                 Gap(20),
