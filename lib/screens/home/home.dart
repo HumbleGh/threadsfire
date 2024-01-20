@@ -39,7 +39,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     ),
                   ),
                 ),
-                Gap(20),
+                const Gap(20),
                 ListView.builder(
                     itemCount: threadMessages.length,
                     itemBuilder: (context, index) {
