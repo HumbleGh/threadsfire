@@ -42,7 +42,11 @@ class _HomeScreenState extends State<HomeScreen> {
                 Gap(20),
                 ListView.builder(
                     itemCount: threadMessages.length,
-                    itemBuilder: (context, index) {})
+                    itemBuilder: (context, index) {
+                      return ThreadMessageWidget(
+                        message: threadMessages[index],
+                      );
+                    })
               ],
             ),
           ),
@@ -55,7 +59,11 @@ class _HomeScreenState extends State<HomeScreen> {
 class ThreadMessageWidget extends StatelessWidget {
   const ThreadMessageWidget({
     super.key,
+    required this.message,
   });
+
+  // Creating instance of the thread message module
+  final ThreadMessage message;
 
   @override
   Widget build(BuildContext context) {
@@ -65,7 +73,9 @@ class ThreadMessageWidget extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             const CircleAvatar(
-              backgroundImage: AssetImage("assets/images/user.jpeg"),
+              backgroundImage:
+                  NetworkImage("https://avatars.dicebear.com/api/avataaars/"),
+              backgroundColor: Colors.white,
             ),
             const Gap(8),
             Expanded(
