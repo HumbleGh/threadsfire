@@ -101,7 +101,7 @@ class ThreadMessageWidget extends StatelessWidget {
                   ),
                   Text(
                     "Hey man do well to call me as soon as possible"
-                    " so we can discuss your future",
+                    "so we can discuss your future",
                     style: GoogleFonts.manrope(fontSize: 14),
                   ),
                   const Gap(10),
