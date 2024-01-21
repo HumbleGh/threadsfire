@@ -128,7 +128,7 @@ class _SignupScreenState extends State<SignupScreen> {
                 focusedBorder: const OutlineInputBorder(
                     borderSide: BorderSide(color: Colors.black),
                     borderRadius: BorderRadius.all(Radius.circular(8.0))),
-                hintText: "Create your password",
+                hintText: "Create password",
                 hintStyle: GoogleFonts.manrope(
                     fontSize: 14, color: Colors.grey.shade600),
               ),
