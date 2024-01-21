@@ -93,7 +93,7 @@ class _LoginScreenState extends State<LoginScreen> {
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
                 GestureDetector(
-                    onTap: () {}, child: const Text("Forgot Passsword"))
+                    onTap: () {}, child: const Text("Forgot Passsword?"))
               ],
             ),
             const Gap(30),
