@@ -92,7 +92,7 @@ class ThreadMessageWidget extends StatelessWidget {
                       ),
                       const Spacer(),
                       Text(
-                        "5min",
+                        "5mins",
                         style: GoogleFonts.manrope(fontSize: 10),
                       ),
                       const Gap(6),
