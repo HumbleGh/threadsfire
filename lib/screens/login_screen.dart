@@ -96,7 +96,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     onTap: () {}, child: const Text("Forgot Passsword?"))
               ],
             ),
-            const Gap(30),
+            const Gap(32),
             GestureDetector(
               onTap: login,
               child: Container(
