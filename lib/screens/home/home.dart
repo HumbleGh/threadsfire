@@ -72,9 +72,9 @@ class ThreadMessageWidget extends StatelessWidget {
         Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const CircleAvatar(
-              backgroundImage:
-                  NetworkImage("https://avatars.dicebear.com/api/avataaars/"),
+            CircleAvatar(
+              backgroundImage: NetworkImage(
+                  "https://avatars.dicebear.com/api/avataaars/${message.senderName}.png"),
               backgroundColor: Colors.white,
             ),
             const Gap(8),
