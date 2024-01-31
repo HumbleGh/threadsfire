@@ -12,7 +12,7 @@ class _SearchScreenState extends State<SearchScreen> {
   Widget build(BuildContext context) {
     return const Scaffold(
       body: Center(
-        child: Text("Search Page Yeah"),
+        child: Text("My Search Page"),
       ),
     );
   }
