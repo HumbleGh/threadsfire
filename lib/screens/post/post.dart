@@ -12,7 +12,7 @@ class _PostScreenState extends State<PostScreen> {
   Widget build(BuildContext context) {
     return const Scaffold(
       body: Center(
-        child: Text("Post Page Yeah"),
+        child: Text("My Post Page"),
       ),
     );
   }
