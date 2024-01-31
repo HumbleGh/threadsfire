@@ -41,6 +41,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
                 const Gap(20),
                 ListView.builder(
+                    shrinkWrap: true,
                     itemCount: threadMessages.length,
                     itemBuilder: (context, index) {
                       return ThreadMessageWidget(
@@ -74,7 +75,7 @@ class ThreadMessageWidget extends StatelessWidget {
           children: [
             CircleAvatar(
               backgroundImage: NetworkImage(
-                  "https://avatars.dicebear.com/api/avataaars/${message.senderName}.png"),
+                  "https://api.dicebear.com/7.x/avataaars/${message.senderName}.svg"),
               backgroundColor: Colors.white,
             ),
             const Gap(8),
