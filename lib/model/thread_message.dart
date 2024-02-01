@@ -58,7 +58,7 @@ class ThreadMessage {
 List<ThreadMessage> threadMessages = [
   ThreadMessage(
       id: "1",
-      senderName: "Humble",
+      senderName: "Humble Osei",
       senderProfileImageUrl: "profile_url_1.jpg",
       message:
           "Hey Man, I am here to stay regardless of whatever that may happen",
@@ -68,7 +68,7 @@ List<ThreadMessage> threadMessages = [
       commentCount: 32),
   ThreadMessage(
       id: "2",
-      senderName: "AnyNameSir",
+      senderName: "Abena Nyarko",
       senderProfileImageUrl: "profile_url_2.jpg",
       message: "Something something goes here",
       timestamp: DateTime.now().subtract(const Duration(minutes: 12)),
@@ -86,7 +86,7 @@ List<ThreadMessage> threadMessages = [
       commentCount: 52),
   ThreadMessage(
       id: "4",
-      senderName: "Animaker",
+      senderName: "Ella Boat",
       senderProfileImageUrl: "profile_url_4.jpg",
       message: "Something something goes here",
       timestamp: DateTime.now().subtract(const Duration(minutes: 12)),
