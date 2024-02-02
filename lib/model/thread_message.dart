@@ -71,7 +71,7 @@ List<ThreadMessage> threadMessages = [
       senderName: "AbenaNyarko",
       senderProfileImageUrl: "profile_url_2.jpg",
       message:
-          "For God do love the world, that He gave us his only begotten son",
+          "For God so love the world, that He gave us his only begotten son",
       timestamp: DateTime.now().subtract(const Duration(minutes: 12)),
       likesCount: 232,
       retweetCount: 44,
