@@ -58,7 +58,7 @@ class ThreadMessage {
 List<ThreadMessage> threadMessages = [
   ThreadMessage(
       id: "1",
-      senderName: "HumbleOsei",
+      senderName: "Humble Osei",
       senderProfileImageUrl: "profile_url_1.jpg",
       message:
           "Hey Man, I am here to stay regardless of whatever that may happen",
@@ -68,17 +68,16 @@ List<ThreadMessage> threadMessages = [
       commentCount: 32),
   ThreadMessage(
       id: "2",
-      senderName: "AbenaNyarko",
+      senderName: "Abena Nyarko",
       senderProfileImageUrl: "profile_url_2.jpg",
-      message:
-          "For God so love the world, that He gave us his only begotten son",
+      message: "For Goo love the world, that He gave us his only begotten son",
       timestamp: DateTime.now().subtract(const Duration(minutes: 12)),
       likesCount: 232,
       retweetCount: 44,
       commentCount: 52),
   ThreadMessage(
       id: "3",
-      senderName: "NimakoPrempeh",
+      senderName: "Nimako Prempeh",
       senderProfileImageUrl: "profile_url_3.jpg",
       message:
           "That who so ever believes in him, should not perish, but have eternal life.",
@@ -88,7 +87,16 @@ List<ThreadMessage> threadMessages = [
       commentCount: 52),
   ThreadMessage(
       id: "4",
-      senderName: "EllaBoat",
+      senderName: "Ella Boat",
+      senderProfileImageUrl: "profile_url_4.jpg",
+      message: "He God said, He is with me in all things, So I fear no one",
+      timestamp: DateTime.now().subtract(const Duration(minutes: 12)),
+      likesCount: 232,
+      retweetCount: 44,
+      commentCount: 52),
+  ThreadMessage(
+      id: "5",
+      senderName: "Safo Neuman",
       senderProfileImageUrl: "profile_url_4.jpg",
       message: "He God said, He is with me in all things, So I fear no one",
       timestamp: DateTime.now().subtract(const Duration(minutes: 12)),
