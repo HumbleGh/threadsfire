@@ -75,7 +75,7 @@ class ThreadMessageWidget extends StatelessWidget {
           children: [
             CircleAvatar(
               backgroundImage: NetworkImage(
-                  "https://avatars.dicebear.com/api/avataaars/${message.senderName}.jpg"),
+                  "https://api.dicebear.com/7.x/adventurer/svg${message.senderName}.png"),
               backgroundColor: Colors.white,
             ),
             const Gap(8),
