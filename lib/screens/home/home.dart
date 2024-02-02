@@ -75,7 +75,7 @@ class ThreadMessageWidget extends StatelessWidget {
           children: [
             CircleAvatar(
               backgroundImage: NetworkImage(
-                  "https://api.dicebear.com/7.x/avataaars/${message.senderName}.svg"),
+                  "https://avatars.dicebear.com/api/avataaars/${message.senderName}.jpg"),
               backgroundColor: Colors.white,
             ),
             const Gap(8),
@@ -86,7 +86,7 @@ class ThreadMessageWidget extends StatelessWidget {
                   Row(
                     children: [
                       Text(
-                        "Humble",
+                        message.senderName,
                         style: GoogleFonts.manrope(
                           fontWeight: FontWeight.bold,
                         ),
@@ -101,8 +101,7 @@ class ThreadMessageWidget extends StatelessWidget {
                     ],
                   ),
                   Text(
-                    "Hey man do well to call me as soon as possible"
-                    "so we can discuss your future",
+                    message.message,
                     style: GoogleFonts.manrope(fontSize: 14),
                   ),
                   const Gap(10),
@@ -144,4 +143,6 @@ class ThreadMessageWidget extends StatelessWidget {
       ],
     );
   }
+
+  // Creating a function to get time difference
 }

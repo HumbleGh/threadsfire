@@ -70,7 +70,8 @@ List<ThreadMessage> threadMessages = [
       id: "2",
       senderName: "Abena Nyarko",
       senderProfileImageUrl: "profile_url_2.jpg",
-      message: "Something something goes here",
+      message:
+          "For God do love the world, that He gave us his only begotten son",
       timestamp: DateTime.now().subtract(const Duration(minutes: 12)),
       likesCount: 232,
       retweetCount: 44,
@@ -79,7 +80,8 @@ List<ThreadMessage> threadMessages = [
       id: "3",
       senderName: "Nimako Prempeh",
       senderProfileImageUrl: "profile_url_3.jpg",
-      message: "Something something goes here",
+      message:
+          "That who so ever believes in him, should not perish, but have eternal life.",
       timestamp: DateTime.now().subtract(const Duration(minutes: 12)),
       likesCount: 232,
       retweetCount: 44,
@@ -88,7 +90,7 @@ List<ThreadMessage> threadMessages = [
       id: "4",
       senderName: "Ella Boat",
       senderProfileImageUrl: "profile_url_4.jpg",
-      message: "Something something goes here",
+      message: "He God said, He is with me in all things, So I fear no one",
       timestamp: DateTime.now().subtract(const Duration(minutes: 12)),
       likesCount: 232,
       retweetCount: 44,
