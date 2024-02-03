@@ -75,7 +75,7 @@ class ThreadMessageWidget extends StatelessWidget {
           children: [
             CircleAvatar(
               backgroundImage: NetworkImage(
-                  "https://api.dicebear.com/7.x/adventurer/svg${message.senderName}.png"),
+                  "https://api.dicebear.com/7.x/adventurer/${message.senderName}.png"),
               backgroundColor: Colors.white,
             ),
             const Gap(8),
@@ -144,5 +144,19 @@ class ThreadMessageWidget extends StatelessWidget {
     );
   }
 
-  // Creating a function to get time difference
+  // Creating a function to get time difference (returns a string)
+
+  String _getTimeDifference(DateTime timestamp) {
+    final now = DateTime.now();
+    final difference = now.difference(timestamp);
+
+    if (difference.inMinutes < 1) {
+      return "Just now";
+    } else if (difference.inHours < 1) {
+      return '${difference.inMinutes} min';
+    } else if (difference.inDays < 1) {
+      return '${difference.inHours} hr';
+    } else
+      return '${difference.inDays} day';
+  }
 }
