@@ -35,7 +35,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   child: const Center(
                     child: Image(
                       image: AssetImage("assets/images/logo.png"),
-                      height: 40,
+                      height: 30,
                     ),
                   ),
                 ),
