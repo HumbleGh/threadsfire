@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
 import 'package:flutter/services.dart';
 import 'package:gap/gap.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:threadsfire/model/suggested_follower.dart';
 
 class SearchScreen extends StatefulWidget {
   const SearchScreen({super.key});
@@ -44,11 +46,10 @@ class _SearchScreenState extends State<SearchScreen> {
                     ),
                   ),
                 ),
-                Gap(20),
-                const SuggestedFollower(),
-                const SuggestedFollower(),
-                const SuggestedFollower(),
-                const SuggestedFollower(),
+                const Gap(20),
+                ...suggestedFollowers.map((follower) {
+                  return SuggestedFollowerWidget(follower: follower);
+                }).toList()
               ],
             ),
           ),
@@ -59,8 +60,11 @@ class _SearchScreenState extends State<SearchScreen> {
 }
 
 // Class for suggested profiles to follow
-class SuggestedFollower extends StatelessWidget {
-  const SuggestedFollower({super.key});
+class SuggestedFollowerWidget extends StatelessWidget {
+  const SuggestedFollowerWidget({super.key, required this.follower});
+
+  // Creating and instance of the suggested follower
+  final SuggestedFollower follower;
 
   @override
   Widget build(BuildContext context) {
@@ -68,11 +72,16 @@ class SuggestedFollower extends StatelessWidget {
       children: [
         Row(
           children: [
-            const Row(
+            Row(
               children: [
-                CircleAvatar(),
-                Gap(10),
-                Column(
+                CircleAvatar(
+                  backgroundImage: NetworkImage(
+                    'https://avatars.dicebear.com/api/avataaars/${follower.username}.png',
+                  ),
+                  backgroundColor: Colors.white,
+                ),
+                const Gap(10),
+                const Column(
                   children: [Text("John Doe"), Text("@johndoe")],
                 )
               ],
