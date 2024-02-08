@@ -87,9 +87,9 @@ class SuggestedFollower extends StatelessWidget {
             )
           ],
         ),
-        Gap(10),
+        const Gap(10),
         const Divider(),
-        Gap(10),
+        const Gap(10),
       ],
     );
   }
