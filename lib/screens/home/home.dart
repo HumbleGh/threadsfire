@@ -5,7 +5,6 @@ import 'package:flutter_svg/svg.dart';
 import 'package:gap/gap.dart'; // Make sure you have the import for Gap
 import 'package:google_fonts/google_fonts.dart';
 import 'package:threadsfire/model/thread_message.dart';
-import 'package:threadsfire/screens/navbar.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key})
