@@ -25,18 +25,10 @@ class _HomeScreenState extends State<HomeScreen> {
             padding: const EdgeInsets.all(20.0),
             child: Column(
               children: [
-                GestureDetector(
-                  onTap: () {
-                    Navigator.pushReplacement(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => const BottomNavBar()));
-                  },
-                  child: const Center(
-                    child: Image(
-                      image: AssetImage("assets/images/logo.png"),
-                      height: 30,
-                    ),
+                const Center(
+                  child: Image(
+                    image: AssetImage("assets/images/logo.png"),
+                    height: 30,
                   ),
                 ),
                 const Gap(20),
