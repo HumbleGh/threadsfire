@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class SearchScreen extends StatefulWidget {
   const SearchScreen({super.key});
@@ -10,10 +12,29 @@ class SearchScreen extends StatefulWidget {
 class _SearchScreenState extends State<SearchScreen> {
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body: Center(
-        child: Text("My Search Page"),
+    return Scaffold(
+        body: SafeArea(
+            child: Container(
+      padding: EdgeInsets.symmetric(
+        horizontal: 20,
       ),
-    );
+      child: Column(
+        children: [
+          Text(
+            "Search",
+            style:
+                GoogleFonts.manrope(fontSize: 24, fontWeight: FontWeight.w700),
+          ),
+          const Gap(10),
+          Container(
+            width: double.infinity,
+            height: 44,
+            decoration: BoxDecoration(
+                border: Border.all(width: 1, color: Colors.grey),
+                borderRadius: BorderRadius.circular(12)),
+          )
+        ],
+      ),
+    )));
   }
 }
