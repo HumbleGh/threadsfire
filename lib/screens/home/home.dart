@@ -156,7 +156,8 @@ class ThreadMessageWidget extends StatelessWidget {
       return '${difference.inMinutes} min';
     } else if (difference.inDays < 1) {
       return '${difference.inHours} hr';
-    } else
+    } else {
       return '${difference.inDays} day';
+    }
   }
 }
