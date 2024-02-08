@@ -65,24 +65,26 @@ class SuggestedFollower extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        ListTile(
-          leading: const CircleAvatar(),
-          title: const Text("John Doe"),
-          subtitle: const Text("johndoe"),
-          trailing: Row(
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              Container(
-                alignment: Alignment.center,
-                width: 100,
-                height: 35,
-                decoration: BoxDecoration(
-                    border: Border.all(width: 1, color: Colors.grey),
-                    borderRadius: BorderRadius.circular(6)),
-                child: const Text("Follow"),
-              )
-            ],
-          ),
+        Row(
+          children: [
+            const Row(
+              children: [
+                CircleAvatar(),
+                Gap(10),
+                Column(
+                  children: [Text("John Doe"), Text("@johndoe")],
+                )
+              ],
+            ),
+            const Spacer(),
+            Container(
+              padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 5),
+              decoration: BoxDecoration(
+                  border: Border.all(color: Colors.grey),
+                  borderRadius: BorderRadius.circular(6)),
+              child: const Text("Follow"),
+            )
+          ],
         ),
         const Divider(),
       ],
