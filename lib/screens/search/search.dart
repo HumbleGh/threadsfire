@@ -44,6 +44,7 @@ class _SearchScreenState extends State<SearchScreen> {
                     ),
                   ),
                 ),
+                Gap(20),
                 const SuggestedFollower(),
                 const SuggestedFollower(),
                 const SuggestedFollower(),
@@ -86,7 +87,9 @@ class SuggestedFollower extends StatelessWidget {
             )
           ],
         ),
+        Gap(10),
         const Divider(),
+        Gap(10),
       ],
     );
   }
