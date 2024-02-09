@@ -53,5 +53,5 @@ List<SuggestedFollower> suggestedFollowers = [
   SuggestedFollower(
       id: "6", username: "tumbel", profileImageUrl: '', isFollowing: true),
   SuggestedFollower(
-      id: "7", username: "umbrella", profileImageUrl: '', isFollowing: false),
+      id: "7", username: "rella", profileImageUrl: '', isFollowing: true),
 ];
