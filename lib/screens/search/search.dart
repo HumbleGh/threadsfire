@@ -81,19 +81,29 @@ class SuggestedFollowerWidget extends StatelessWidget {
                   backgroundColor: Colors.white,
                 ),
                 const Gap(10),
-                const Column(
-                  children: [Text("John Doe"), Text("@johndoe")],
+                Column(
+                  children: [
+                    Text(follower.username),
+                    Text(follower.username.toLowerCase()),
+                  ],
                 )
               ],
             ),
             const Spacer(),
             Container(
+              alignment: Alignment.center,
+              width: 100,
               padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 5),
               decoration: BoxDecoration(
                   border: Border.all(color: Colors.grey),
                   borderRadius: BorderRadius.circular(6)),
-              child: const Text("Follow"),
-            )
+              child: follower.isFollowing
+                  ? Text(
+                      'Following',
+                      style: TextStyle(color: Colors.grey.shade500),
+                    )
+                  : const Text('Follow'),
+            ),
           ],
         ),
         const Gap(10),
