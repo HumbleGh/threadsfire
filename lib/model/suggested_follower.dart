@@ -49,9 +49,9 @@ List<SuggestedFollower> suggestedFollowers = [
   SuggestedFollower(
       id: "4", username: "imagine", profileImageUrl: '', isFollowing: true),
   SuggestedFollower(
-      id: "5", username: "umbrella", profileImageUrl: '', isFollowing: false),
+      id: "5", username: "mbrella", profileImageUrl: '', isFollowing: false),
   SuggestedFollower(
-      id: "6", username: "umbrella", profileImageUrl: '', isFollowing: false),
+      id: "6", username: "tumbel", profileImageUrl: '', isFollowing: true),
   SuggestedFollower(
-      id: "5", username: "umbrella", profileImageUrl: '', isFollowing: false),
+      id: "7", username: "umbrella", profileImageUrl: '', isFollowing: false),
 ];
