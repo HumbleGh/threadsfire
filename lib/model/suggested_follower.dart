@@ -43,10 +43,7 @@ List<SuggestedFollower> suggestedFollowers = [
   SuggestedFollower(
       id: "1", username: "iamhumble", profileImageUrl: '', isFollowing: true),
   SuggestedFollower(
-      id: "2",
-      username: "callmehumble",
-      profileImageUrl: '',
-      isFollowing: false),
+      id: "2", username: "callhumble", profileImageUrl: '', isFollowing: false),
   SuggestedFollower(
       id: "3", username: "yesiamhim", profileImageUrl: '', isFollowing: true),
   SuggestedFollower(
