@@ -114,7 +114,7 @@ List<ThreadMessage> threadMessages = [
       commentCount: 2),
   ThreadMessage(
       id: "7",
-      senderName: "Safo Neuman",
+      senderName: "Kwame Kwaning",
       senderProfileImageUrl: "profile_url_4.jpg",
       message: "He God said, He is with me in all things, So I fear no one",
       timestamp: DateTime.now().subtract(const Duration(minutes: 1)),
