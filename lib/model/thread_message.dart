@@ -103,4 +103,22 @@ List<ThreadMessage> threadMessages = [
       likesCount: 32,
       retweetCount: 40,
       commentCount: 52),
+  ThreadMessage(
+      id: "5",
+      senderName: "Safo Neuman",
+      senderProfileImageUrl: "profile_url_4.jpg",
+      message: "He God said, He is with me in all things, So I fear no one",
+      timestamp: DateTime.now().subtract(const Duration(minutes: 1)),
+      likesCount: 32,
+      retweetCount: 40,
+      commentCount: 52),
+  ThreadMessage(
+      id: "5",
+      senderName: "Safo Neuman",
+      senderProfileImageUrl: "profile_url_4.jpg",
+      message: "He God said, He is with me in all things, So I fear no one",
+      timestamp: DateTime.now().subtract(const Duration(minutes: 1)),
+      likesCount: 32,
+      retweetCount: 40,
+      commentCount: 52),
 ];
