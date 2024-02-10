@@ -105,9 +105,9 @@ List<ThreadMessage> threadMessages = [
       commentCount: 52),
   ThreadMessage(
       id: "6",
-      senderName: "Safo Neuman",
+      senderName: "Jude Gadabui",
       senderProfileImageUrl: "profile_url_4.jpg",
-      message: "He God said, He is with me in all things, So I fear no one",
+      message: "He knows what is best for His children",
       timestamp: DateTime.now().subtract(const Duration(minutes: 1)),
       likesCount: 32,
       retweetCount: 40,
