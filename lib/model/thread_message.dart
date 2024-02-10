@@ -109,9 +109,9 @@ List<ThreadMessage> threadMessages = [
       senderProfileImageUrl: "profile_url_4.jpg",
       message: "He knows what is best for His children",
       timestamp: DateTime.now().subtract(const Duration(minutes: 1)),
-      likesCount: 32,
-      retweetCount: 40,
-      commentCount: 52),
+      likesCount: 3,
+      retweetCount: 4,
+      commentCount: 2),
   ThreadMessage(
       id: "7",
       senderName: "Safo Neuman",
