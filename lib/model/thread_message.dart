@@ -118,7 +118,7 @@ List<ThreadMessage> threadMessages = [
       senderProfileImageUrl: "profile_url_4.jpg",
       message: "He God said, He is with me in all things, So I fear no one",
       timestamp: DateTime.now().subtract(const Duration(minutes: 1)),
-      likesCount: 32,
-      retweetCount: 40,
-      commentCount: 52),
+      likesCount: 22,
+      retweetCount: 5434,
+      commentCount: 32),
 ];
