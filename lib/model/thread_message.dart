@@ -104,7 +104,7 @@ List<ThreadMessage> threadMessages = [
       retweetCount: 40,
       commentCount: 52),
   ThreadMessage(
-      id: "5",
+      id: "6",
       senderName: "Safo Neuman",
       senderProfileImageUrl: "profile_url_4.jpg",
       message: "He God said, He is with me in all things, So I fear no one",
@@ -113,7 +113,7 @@ List<ThreadMessage> threadMessages = [
       retweetCount: 40,
       commentCount: 52),
   ThreadMessage(
-      id: "5",
+      id: "7",
       senderName: "Safo Neuman",
       senderProfileImageUrl: "profile_url_4.jpg",
       message: "He God said, He is with me in all things, So I fear no one",
