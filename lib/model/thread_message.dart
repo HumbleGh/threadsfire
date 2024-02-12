@@ -97,7 +97,7 @@ List<ThreadMessage> threadMessages = [
   ThreadMessage(
       id: "5",
       senderName: "Safo Neuman",
-      senderProfileImageUrl: "profile_url_4.jpg",
+      senderProfileImageUrl: "profile_url_5.jpg",
       message: "He God said, He is with me in all things, So I fear no one",
       timestamp: DateTime.now().subtract(const Duration(minutes: 300)),
       likesCount: 32,
@@ -106,7 +106,7 @@ List<ThreadMessage> threadMessages = [
   ThreadMessage(
       id: "6",
       senderName: "Jude Gadabui",
-      senderProfileImageUrl: "profile_url_4.jpg",
+      senderProfileImageUrl: "profile_url_6.jpg",
       message: "He knows what is best for His children",
       timestamp: DateTime.now().subtract(const Duration(minutes: 45)),
       likesCount: 3,
@@ -123,7 +123,7 @@ List<ThreadMessage> threadMessages = [
       commentCount: 32),
   ThreadMessage(
       id: "8",
-      senderName: "Kwame Kwaning",
+      senderName: "Kwame Anane",
       senderProfileImageUrl: "profile_url_4.jpg",
       message: "He God said, He is with me in all things, So I fear no one",
       timestamp: DateTime.now().subtract(const Duration(minutes: 1)),
