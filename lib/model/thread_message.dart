@@ -144,7 +144,7 @@ List<ThreadMessage> threadMessages = [
       id: "10",
       senderName: "Emmanuel",
       senderProfileImageUrl: "profile_url_10.jpg",
-      message: "He God said, He is with me in all things, So I fear no one",
+      message: "This is true because, the ways of a man is not the ways of God",
       timestamp: DateTime.now().subtract(const Duration(minutes: 1)),
       likesCount: 22,
       retweetCount: 5434,
