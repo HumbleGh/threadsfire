@@ -132,7 +132,7 @@ List<ThreadMessage> threadMessages = [
       commentCount: 32),
   ThreadMessage(
       id: "9",
-      senderName: "Kwame Kwaning",
+      senderName: "Abigail Osei",
       senderProfileImageUrl: "profile_url_9.jpg",
       message: "He God said, He is with me in all things, So I fear no one",
       timestamp: DateTime.now().subtract(const Duration(minutes: 1)),
@@ -141,7 +141,7 @@ List<ThreadMessage> threadMessages = [
       commentCount: 32),
   ThreadMessage(
       id: "10",
-      senderName: "Kwame Kwaning",
+      senderName: "Emmanuel",
       senderProfileImageUrl: "profile_url_10.jpg",
       message: "He God said, He is with me in all things, So I fear no one",
       timestamp: DateTime.now().subtract(const Duration(minutes: 1)),
