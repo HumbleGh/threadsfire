@@ -125,7 +125,7 @@ List<ThreadMessage> threadMessages = [
       id: "8",
       senderName: "Kwame Anane",
       senderProfileImageUrl: "profile_url_8.jpg",
-      message: "He God said, He is with me in all things, So I fear no one",
+      message: "For whatever a man puts his mind to and works towards",
       timestamp: DateTime.now().subtract(const Duration(minutes: 1)),
       likesCount: 22,
       retweetCount: 5434,
@@ -134,7 +134,8 @@ List<ThreadMessage> threadMessages = [
       id: "9",
       senderName: "Abigail Osei",
       senderProfileImageUrl: "profile_url_9.jpg",
-      message: "He God said, He is with me in all things, So I fear no one",
+      message:
+          "God will lead him to where he ought to be according to His own will",
       timestamp: DateTime.now().subtract(const Duration(minutes: 1)),
       likesCount: 22,
       retweetCount: 5434,
