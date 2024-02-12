@@ -115,7 +115,7 @@ List<ThreadMessage> threadMessages = [
   ThreadMessage(
       id: "7",
       senderName: "Kwame Kwaning",
-      senderProfileImageUrl: "profile_url_4.jpg",
+      senderProfileImageUrl: "profile_url_7.jpg",
       message: "He God said, He is with me in all things, So I fear no one",
       timestamp: DateTime.now().subtract(const Duration(minutes: 1)),
       likesCount: 22,
@@ -124,7 +124,7 @@ List<ThreadMessage> threadMessages = [
   ThreadMessage(
       id: "8",
       senderName: "Kwame Anane",
-      senderProfileImageUrl: "profile_url_4.jpg",
+      senderProfileImageUrl: "profile_url_8.jpg",
       message: "He God said, He is with me in all things, So I fear no one",
       timestamp: DateTime.now().subtract(const Duration(minutes: 1)),
       likesCount: 22,
@@ -133,7 +133,7 @@ List<ThreadMessage> threadMessages = [
   ThreadMessage(
       id: "9",
       senderName: "Kwame Kwaning",
-      senderProfileImageUrl: "profile_url_4.jpg",
+      senderProfileImageUrl: "profile_url_9.jpg",
       message: "He God said, He is with me in all things, So I fear no one",
       timestamp: DateTime.now().subtract(const Duration(minutes: 1)),
       likesCount: 22,
@@ -142,7 +142,7 @@ List<ThreadMessage> threadMessages = [
   ThreadMessage(
       id: "10",
       senderName: "Kwame Kwaning",
-      senderProfileImageUrl: "profile_url_4.jpg",
+      senderProfileImageUrl: "profile_url_10.jpg",
       message: "He God said, He is with me in all things, So I fear no one",
       timestamp: DateTime.now().subtract(const Duration(minutes: 1)),
       likesCount: 22,
